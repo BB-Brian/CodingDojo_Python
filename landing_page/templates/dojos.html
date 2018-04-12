@@ -1,0 +1,17 @@
+<html>
+    <head>
+       <title>Ninjas</title>
+       <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/my_style_sheet.css') }}">
+    </head>
+    <body>
+      <h1>The Dojo</h1>
+      <h3>Join our Clan: </h3>
+      <p>Create a Ninja</p>
+      <!-- read on to learn about form actions, we'll talk about the method in a later section -->
+      <form action='/new' method='post'>
+          Name: <input type='text' name='name'>
+          Email: <input type='text' name='email'>
+          <input type='submit' value='create user'>
+      </form>
+    </body>
+</html>

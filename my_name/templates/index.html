@@ -1,0 +1,15 @@
+<html>
+    <head>
+       <title>Ninjas</title>
+       <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/my_style_sheet.css') }}">
+    </head>
+    <body>
+      <h1>My name is</h1>
+      <h3>Ninjaja Brian</h3>
+      <p>Please sign my petition for the equal treatment of slippers</p>
+      <form action='/process' method='post'>
+          Name: <input type='text' name='name'>
+          <input type='submit' value='create user'>
+      </form>
+    </body>
+</html>
